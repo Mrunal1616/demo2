@@ -5,7 +5,7 @@ stages{
 
 stage('Checkout'){
 steps{
-git branch: "main", url: 'https://github.com/Mrunal1616/demo.git'
+git branch: "main", url: 'https://github.com/Mrunal1616/demo2.git'
 }
 
 }
