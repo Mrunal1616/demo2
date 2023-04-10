@@ -28,6 +28,37 @@ sh './mvnw clean package -DskipTests=true'
 				sh 'docker build -t mrunalbarde/jenkins-docker-demo:projectdemo .'
 			}
 		}
+		stage('Login') {
+
+steps {
+
+sh 'echo Mrunal@11112000 | docker login -u  mrunalbarde--password-stdin'
+
+}
+
+}
+
+stage('Push') {
+
+steps {
+
+sh 'docker push mrunalbarde/jenkins-docker-demo'
+
+}
+
+}
+
+}
+
+post {
+
+always {
+
+sh 'docker logout'
+
+}
+
+}
 		
 	}
 }
