@@ -32,7 +32,7 @@ sh './mvnw clean package -DskipTests=true'
 
 steps {
 
-sh 'echo Mrunal@11112000 | docker login -u  mrunalbarde--password-stdin'
+sh 'echo Mrunal@11112000 | docker login -u  mrunalbarde --password-stdin'
 
 }
 
