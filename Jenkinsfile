@@ -42,7 +42,7 @@ stage('Push') {
 
 steps {
 
-sh 'docker push mrunalbarde/projectdemo'
+sh 'docker push mrunalbarde/jenkins-docker-demo:projectdemo'
 
 }
 
